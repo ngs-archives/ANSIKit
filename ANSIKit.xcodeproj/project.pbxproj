@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7CD5B9AAE15932F2BC0911 /* Pods_ANSIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CC2F10A64FE7A48D37CD5E /* Pods_ANSIKitTests.framework */; };
 		C95E4EED1A945F1A0067CAD9 /* ANSIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C95E4EEC1A945F1A0067CAD9 /* ANSIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95E4EF31A945F1A0067CAD9 /* ANSIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */; };
 		C95E4EFA1A945F1A0067CAD9 /* ANSIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E4EF91A945F1A0067CAD9 /* ANSIKitTests.swift */; };
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27CC2F10A64FE7A48D37CD5E /* Pods_ANSIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANSIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANSIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95E4EEB1A945F1A0067CAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95E4EEC1A945F1A0067CAD9 /* ANSIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSIKit.h; sourceTree = "<group>"; };
@@ -58,18 +62,29 @@
 				C9E1EFCD1AB595D40097D392 /* Nimble.framework in Frameworks */,
 				C9E1EFCE1AB595D40097D392 /* Quick.framework in Frameworks */,
 				C95E4EF31A945F1A0067CAD9 /* ANSIKit.framework in Frameworks */,
+				5E7CD5B9AAE15932F2BC0911 /* Pods_ANSIKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151152B45BB82F733166FE62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27CC2F10A64FE7A48D37CD5E /* Pods_ANSIKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C95E4EDD1A945F1A0067CAD9 = {
 			isa = PBXGroup;
 			children = (
 				C95E4EE91A945F1A0067CAD9 /* ANSIKit */,
 				C95E4EF61A945F1A0067CAD9 /* ANSIKitTests */,
 				C95E4EE81A945F1A0067CAD9 /* Products */,
+				DBC17FA0BDF405E9010469A3 /* Pods */,
+				151152B45BB82F733166FE62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +145,15 @@
 			name = "ansi formatted";
 			sourceTree = "<group>";
 		};
+		DBC17FA0BDF405E9010469A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */,
+				B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -166,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C95E4F001A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKitTests" */;
 			buildPhases = (
+				5EFC3EE22E9F652567D66353 /* Check Pods Manifest.lock */,
 				C95E4EEE1A945F1A0067CAD9 /* Sources */,
 				C95E4EEF1A945F1A0067CAD9 /* Frameworks */,
 				C95E4EF01A945F1A0067CAD9 /* Resources */,
+				D83F81A1C9A20E8910ADEB40 /* Embed Pods Frameworks */,
+				CFA374970121423EA6478F07 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +213,12 @@
 		C95E4EDE1A945F1A0067CAD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Matthew Delves";
 				TargetAttributes = {
 					C95E4EE61A945F1A0067CAD9 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 74D9UBS5CF;
 					};
 					C95E4EF11A945F1A0067CAD9 = {
 						CreatedOnToolsVersion = 6.2;
@@ -233,6 +260,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EFC3EE22E9F652567D66353 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA374970121423EA6478F07 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D83F81A1C9A20E8910ADEB40 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C95E4EE21A945F1A0067CAD9 /* Sources */ = {
@@ -281,10 +356,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -327,7 +403,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -364,6 +439,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -386,6 +462,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -394,15 +471,9 @@
 		};
 		C95E4F011A945F1A0067CAD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"/Users/matt/Projects/iOS/mortimer/DerivedData/Mortimer/Build/Products/Debug-iphoneos",
-					/Users/matt/Projects/iOS/mortimer/DerivedData/Mortimer/Build/Products/Debug,
-					"$(PROJECT_DIR)/nimble/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/DerivedData/ANSIKit/Build/Products/Debug",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -410,6 +481,7 @@
 				INFOPLIST_FILE = ANSIKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
@@ -417,18 +489,13 @@
 		};
 		C95E4F021A945F1A0067CAD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"/Users/matt/Projects/iOS/mortimer/DerivedData/Mortimer/Build/Products/Debug-iphoneos",
-					/Users/matt/Projects/iOS/mortimer/DerivedData/Mortimer/Build/Products/Debug,
-					"$(PROJECT_DIR)/nimble/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/DerivedData/ANSIKit/Build/Products/Debug",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ANSIKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
