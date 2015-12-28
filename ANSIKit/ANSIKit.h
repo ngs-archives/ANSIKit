@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Matthew Delves. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
 
 //! Project version number for ANSIKit.
 FOUNDATION_EXPORT double ANSIKitVersionNumber;

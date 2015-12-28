@@ -8,15 +8,14 @@
 
 import Quick
 import Nimble
-import ANSIKit
+@testable import ANSIKit
 
 class ANSISpec: QuickSpec {
   override func spec() {
     describe("attributedString") {
       it("constructs") {
-        let filePath = NSBundle(forClass: ANSISpec.self).pathForResource("log", ofType: "txt")
-        var dataResponse: NSData?
-        let result:NSString = NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding, error: nil)!
+        let filePath = NSBundle(forClass: ANSISpec.self).pathForResource("log", ofType: "txt")!
+        let result = try! NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
         let helper = AnsiHelper(color: UIColor.whiteColor(), font: UIFont.preferredFontForTextStyle(UIFontTextStyleBody))
         let attributed = ansiEscapedAttributedString(helper, result as String)
         
@@ -26,8 +25,6 @@ class ANSISpec: QuickSpec {
     
     describe("simple cases") {
       it("input that ends in a newline will not include that newline") {
-        let input = "hello\n"
-        let expected = "hello"
         
         
       }
