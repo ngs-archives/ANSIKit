@@ -65,7 +65,6 @@
 		B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANSIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C95E4EEB1A945F1A0067CAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95E4EF21A945F1A0067CAD9 /* ANSIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANSIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95E4EF81A945F1A0067CAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95E4EF91A945F1A0067CAD9 /* ANSIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANSIKitTests.swift; sourceTree = "<group>"; };
@@ -169,21 +168,12 @@
 			children = (
 				856E05081C31506F003F43BC /* iOS */,
 				856E050A1C31506F003F43BC /* OSX */,
-				C95E4EEA1A945F1A0067CAD9 /* Supporting Files */,
 				C95E4F031A9463D70067CAD9 /* SGRCode.swift */,
 				C9845A6E1A94700C0082154F /* Colors.swift */,
 				C96873BC1A9475D50022366B /* ANSI.swift */,
 				856E04D91C3147AD003F43BC /* Typealias.swift */,
 			);
 			path = ANSIKit;
-			sourceTree = "<group>";
-		};
-		C95E4EEA1A945F1A0067CAD9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C95E4EEB1A945F1A0067CAD9 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C95E4EF61A945F1A0067CAD9 /* ANSIKitTests */ = {
@@ -566,7 +556,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ANSIKit/Info-OSX.plist";
+				INFOPLIST_FILE = ANSIKit/OSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -589,7 +579,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ANSIKit/Info-OSX.plist";
+				INFOPLIST_FILE = ANSIKit/OSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -735,7 +725,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				INFOPLIST_FILE = "ANSIKit/Info-iOS.plist";
+				INFOPLIST_FILE = ANSIKit/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -762,7 +752,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				INFOPLIST_FILE = "ANSIKit/Info-iOS.plist";
+				INFOPLIST_FILE = ANSIKit/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
