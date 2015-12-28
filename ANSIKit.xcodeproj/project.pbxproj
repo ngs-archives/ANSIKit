@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56E281CA29F5A487C39BB1A1 /* Pods_ANSIKitTests_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C317281E8049C02A4946D38 /* Pods_ANSIKitTests_OSX.framework */; };
 		5E7CD5B9AAE15932F2BC0911 /* Pods_ANSIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CC2F10A64FE7A48D37CD5E /* Pods_ANSIKitTests.framework */; };
+		856E04DA1C3147AD003F43BC /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E04D91C3147AD003F43BC /* Typealias.swift */; };
+		856E04F91C3148C4003F43BC /* ANSIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856E04EF1C3148C4003F43BC /* ANSIKit.framework */; };
+		856E05061C314B1A003F43BC /* ANSIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E4EF91A945F1A0067CAD9 /* ANSIKitTests.swift */; };
+		856E05071C314E43003F43BC /* ANSIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C95E4EEC1A945F1A0067CAD9 /* ANSIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95E4EED1A945F1A0067CAD9 /* ANSIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C95E4EEC1A945F1A0067CAD9 /* ANSIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C95E4EF31A945F1A0067CAD9 /* ANSIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */; };
 		C95E4EFA1A945F1A0067CAD9 /* ANSIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E4EF91A945F1A0067CAD9 /* ANSIKitTests.swift */; };
@@ -17,9 +22,17 @@
 		C9845A6F1A94700C0082154F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9845A6E1A94700C0082154F /* Colors.swift */; };
 		C9E1EFCD1AB595D40097D392 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1EFCB1AB595D40097D392 /* Nimble.framework */; };
 		C9E1EFCE1AB595D40097D392 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E1EFCC1AB595D40097D392 /* Quick.framework */; };
+		D5C10E41F37D8378B44C304A /* Pods_ANSIKitTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177534B401C393756F3D1144 /* Pods_ANSIKitTests_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		856E04FA1C3148C4003F43BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C95E4EDE1A945F1A0067CAD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 856E04EE1C3148C4003F43BC;
+			remoteInfo = "ANSIKit-OSX";
+		};
 		C95E4EF41A945F1A0067CAD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C95E4EDE1A945F1A0067CAD9 /* Project object */;
@@ -30,7 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071451807E2E08F4B962F3CE /* Pods-ANSIKitTests-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests-OSX/Pods-ANSIKitTests-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		0DE652FAB405D8B0A6D42973 /* Pods-ANSIKitTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests-iOS/Pods-ANSIKitTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		12809B5AE2520C7AC4786B26 /* Pods-ANSIKitTests_OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests_OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests_OSX/Pods-ANSIKitTests_OSX.release.xcconfig"; sourceTree = "<group>"; };
+		177534B401C393756F3D1144 /* Pods_ANSIKitTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANSIKitTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C317281E8049C02A4946D38 /* Pods_ANSIKitTests_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANSIKitTests_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26570B6E60108DE716CAF298 /* Pods-ANSIKitTests-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests-OSX/Pods-ANSIKitTests-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		27CC2F10A64FE7A48D37CD5E /* Pods_ANSIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANSIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E50D8835BE3D31267402192 /* Pods-ANSIKitTests_OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests_OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests_OSX/Pods-ANSIKitTests_OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		83922C8440A4DF0B1B72AE8C /* Pods-ANSIKitTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests-iOS/Pods-ANSIKitTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		856E04D91C3147AD003F43BC /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		856E04EF1C3148C4003F43BC /* ANSIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANSIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		856E04F81C3148C4003F43BC /* ANSIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANSIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANSIKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANSIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +72,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		856E04EB1C3148C4003F43BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856E04F51C3148C4003F43BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856E04F91C3148C4003F43BC /* ANSIKit.framework in Frameworks */,
+				56E281CA29F5A487C39BB1A1 /* Pods_ANSIKitTests_OSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C95E4EE31A945F1A0067CAD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +103,7 @@
 				C9E1EFCE1AB595D40097D392 /* Quick.framework in Frameworks */,
 				C95E4EF31A945F1A0067CAD9 /* ANSIKit.framework in Frameworks */,
 				5E7CD5B9AAE15932F2BC0911 /* Pods_ANSIKitTests.framework in Frameworks */,
+				D5C10E41F37D8378B44C304A /* Pods_ANSIKitTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				27CC2F10A64FE7A48D37CD5E /* Pods_ANSIKitTests.framework */,
+				1C317281E8049C02A4946D38 /* Pods_ANSIKitTests_OSX.framework */,
+				177534B401C393756F3D1144 /* Pods_ANSIKitTests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +136,8 @@
 			children = (
 				C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */,
 				C95E4EF21A945F1A0067CAD9 /* ANSIKitTests.xctest */,
+				856E04EF1C3148C4003F43BC /* ANSIKit.framework */,
+				856E04F81C3148C4003F43BC /* ANSIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +150,7 @@
 				C95E4F031A9463D70067CAD9 /* SGRCode.swift */,
 				C9845A6E1A94700C0082154F /* Colors.swift */,
 				C96873BC1A9475D50022366B /* ANSI.swift */,
+				856E04D91C3147AD003F43BC /* Typealias.swift */,
 			);
 			path = ANSIKit;
 			sourceTree = "<group>";
@@ -150,6 +196,12 @@
 			children = (
 				B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */,
 				B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */,
+				2E50D8835BE3D31267402192 /* Pods-ANSIKitTests_OSX.debug.xcconfig */,
+				12809B5AE2520C7AC4786B26 /* Pods-ANSIKitTests_OSX.release.xcconfig */,
+				071451807E2E08F4B962F3CE /* Pods-ANSIKitTests-OSX.debug.xcconfig */,
+				26570B6E60108DE716CAF298 /* Pods-ANSIKitTests-OSX.release.xcconfig */,
+				83922C8440A4DF0B1B72AE8C /* Pods-ANSIKitTests-iOS.debug.xcconfig */,
+				0DE652FAB405D8B0A6D42973 /* Pods-ANSIKitTests-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -157,6 +209,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		856E04EC1C3148C4003F43BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856E05071C314E43003F43BC /* ANSIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C95E4EE41A945F1A0067CAD9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,9 +228,48 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C95E4EE61A945F1A0067CAD9 /* ANSIKit */ = {
+		856E04EE1C3148C4003F43BC /* ANSIKit-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C95E4EFD1A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKit" */;
+			buildConfigurationList = 856E05001C3148C4003F43BC /* Build configuration list for PBXNativeTarget "ANSIKit-OSX" */;
+			buildPhases = (
+				856E04EA1C3148C4003F43BC /* Sources */,
+				856E04EB1C3148C4003F43BC /* Frameworks */,
+				856E04EC1C3148C4003F43BC /* Headers */,
+				856E04ED1C3148C4003F43BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ANSIKit-OSX";
+			productName = "ANSIKit-OSX";
+			productReference = 856E04EF1C3148C4003F43BC /* ANSIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		856E04F71C3148C4003F43BC /* ANSIKitTests-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856E05031C3148C4003F43BC /* Build configuration list for PBXNativeTarget "ANSIKitTests-OSX" */;
+			buildPhases = (
+				4D047C3A0C9045053D59F18B /* Check Pods Manifest.lock */,
+				856E04F41C3148C4003F43BC /* Sources */,
+				856E04F51C3148C4003F43BC /* Frameworks */,
+				856E04F61C3148C4003F43BC /* Resources */,
+				D822360771A2119667F00F77 /* Embed Pods Frameworks */,
+				A8F37D3A257E606257349934 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				856E04FB1C3148C4003F43BC /* PBXTargetDependency */,
+			);
+			name = "ANSIKitTests-OSX";
+			productName = "ANSIKit-OSXTests";
+			productReference = 856E04F81C3148C4003F43BC /* ANSIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C95E4EE61A945F1A0067CAD9 /* ANSIKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95E4EFD1A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKit-iOS" */;
 			buildPhases = (
 				C95E4EE21A945F1A0067CAD9 /* Sources */,
 				C95E4EE31A945F1A0067CAD9 /* Frameworks */,
@@ -181,14 +280,14 @@
 			);
 			dependencies = (
 			);
-			name = ANSIKit;
+			name = "ANSIKit-iOS";
 			productName = ANSIKit;
 			productReference = C95E4EE71A945F1A0067CAD9 /* ANSIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C95E4EF11A945F1A0067CAD9 /* ANSIKitTests */ = {
+		C95E4EF11A945F1A0067CAD9 /* ANSIKitTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C95E4F001A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKitTests" */;
+			buildConfigurationList = C95E4F001A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKitTests-iOS" */;
 			buildPhases = (
 				5EFC3EE22E9F652567D66353 /* Check Pods Manifest.lock */,
 				C95E4EEE1A945F1A0067CAD9 /* Sources */,
@@ -202,7 +301,7 @@
 			dependencies = (
 				C95E4EF51A945F1A0067CAD9 /* PBXTargetDependency */,
 			);
-			name = ANSIKitTests;
+			name = "ANSIKitTests-iOS";
 			productName = ANSIKitTests;
 			productReference = C95E4EF21A945F1A0067CAD9 /* ANSIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -217,6 +316,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Matthew Delves";
 				TargetAttributes = {
+					856E04EE1C3148C4003F43BC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					856E04F71C3148C4003F43BC = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					C95E4EE61A945F1A0067CAD9 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -237,13 +342,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C95E4EE61A945F1A0067CAD9 /* ANSIKit */,
-				C95E4EF11A945F1A0067CAD9 /* ANSIKitTests */,
+				C95E4EE61A945F1A0067CAD9 /* ANSIKit-iOS */,
+				856E04EE1C3148C4003F43BC /* ANSIKit-OSX */,
+				C95E4EF11A945F1A0067CAD9 /* ANSIKitTests-iOS */,
+				856E04F71C3148C4003F43BC /* ANSIKitTests-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		856E04ED1C3148C4003F43BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856E04F61C3148C4003F43BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C95E4EE51A945F1A0067CAD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +383,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4D047C3A0C9045053D59F18B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		5EFC3EE22E9F652567D66353 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +413,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A8F37D3A257E606257349934 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests-OSX/Pods-ANSIKitTests-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CFA374970121423EA6478F07 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,7 +440,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests-iOS/Pods-ANSIKitTests-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D822360771A2119667F00F77 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests_OSX/Pods-ANSIKitTests_OSX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D83F81A1C9A20E8910ADEB40 /* Embed Pods Frameworks */ = {
@@ -304,18 +470,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests/Pods-ANSIKitTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANSIKitTests-iOS/Pods-ANSIKitTests-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		856E04EA1C3148C4003F43BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856E04F41C3148C4003F43BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856E05061C314B1A003F43BC /* ANSIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C95E4EE21A945F1A0067CAD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C96873BD1A9475D50022366B /* ANSI.swift in Sources */,
 				C95E4F041A9463D70067CAD9 /* SGRCode.swift in Sources */,
+				856E04DA1C3147AD003F43BC /* Typealias.swift in Sources */,
 				C9845A6F1A94700C0082154F /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,14 +513,99 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		856E04FB1C3148C4003F43BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 856E04EE1C3148C4003F43BC /* ANSIKit-OSX */;
+			targetProxy = 856E04FA1C3148C4003F43BC /* PBXContainerItemProxy */;
+		};
 		C95E4EF51A945F1A0067CAD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C95E4EE61A945F1A0067CAD9 /* ANSIKit */;
+			target = C95E4EE61A945F1A0067CAD9 /* ANSIKit-iOS */;
 			targetProxy = C95E4EF41A945F1A0067CAD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		856E05011C3148C4003F43BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "ANSIKit/Info-OSX.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ANSIKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		856E05021C3148C4003F43BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "ANSIKit/Info-OSX.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ANSIKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		856E05041C3148C4003F43BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071451807E2E08F4B962F3CE /* Pods-ANSIKitTests-OSX.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "ANSIKitTests/Info-OSX.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ANSIKitTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		856E05051C3148C4003F43BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26570B6E60108DE716CAF298 /* Pods-ANSIKitTests-OSX.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "ANSIKitTests/Info-OSX.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ANSIKitTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		C95E4EFB1A945F1A0067CAD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -376,6 +643,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -415,6 +683,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,13 +703,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ANSIKit/Info.plist;
+				INFOPLIST_FILE = "ANSIKit/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ANSIKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -457,13 +726,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ANSIKit/Info.plist;
+				INFOPLIST_FILE = "ANSIKit/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ANSIKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
@@ -471,32 +740,32 @@
 		};
 		C95E4F011A945F1A0067CAD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5FA63C586C01ADB88776A0F /* Pods-ANSIKitTests.debug.xcconfig */;
+			baseConfigurationReference = 83922C8440A4DF0B1B72AE8C /* Pods-ANSIKitTests-iOS.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ANSIKitTests/Info.plist;
+				INFOPLIST_FILE = "ANSIKitTests/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ANSIKitTests;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		C95E4F021A945F1A0067CAD9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B16C958DB626ACFBA8C5FC37 /* Pods-ANSIKitTests.release.xcconfig */;
+			baseConfigurationReference = 0DE652FAB405D8B0A6D42973 /* Pods-ANSIKitTests-iOS.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = ANSIKitTests/Info.plist;
+				INFOPLIST_FILE = "ANSIKitTests/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reformedsoftware.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ANSIKitTests;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
@@ -504,6 +773,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		856E05001C3148C4003F43BC /* Build configuration list for PBXNativeTarget "ANSIKit-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856E05011C3148C4003F43BC /* Debug */,
+				856E05021C3148C4003F43BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856E05031C3148C4003F43BC /* Build configuration list for PBXNativeTarget "ANSIKitTests-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856E05041C3148C4003F43BC /* Debug */,
+				856E05051C3148C4003F43BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C95E4EE11A945F1A0067CAD9 /* Build configuration list for PBXProject "ANSIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -513,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C95E4EFD1A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKit" */ = {
+		C95E4EFD1A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C95E4EFE1A945F1A0067CAD9 /* Debug */,
@@ -522,7 +809,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C95E4F001A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKitTests" */ = {
+		C95E4F001A945F1A0067CAD9 /* Build configuration list for PBXNativeTarget "ANSIKitTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C95E4F011A945F1A0067CAD9 /* Debug */,

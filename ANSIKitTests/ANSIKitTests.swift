@@ -8,7 +8,7 @@
 
 import Quick
 import Nimble
-import ANSIKit
+@testable import ANSIKit
 
 class ANSISpec: QuickSpec {
   override func spec() {
